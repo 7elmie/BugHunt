@@ -1,0 +1,32 @@
+SSL Medium Strength Cipher Suites Supported (SWEET32)
+
+Plugin Details
+Severity:High
+ID:42873
+Version:1.21
+Type:remote
+Family:General
+Published:November 23, 2009
+Modified:February 3, 2021
+Risk Information
+Risk Factor: Medium
+CVSS v3.0 Base Score 7.5
+CVSS v3.0 Vector: CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+CVSS v2.0 Base Score: 5.0
+CVSS v2.0 Vector: CVSS2#AV:N/AC:L/Au:N/C:P/I:N/A:N
+Vulnerability Information
+Vulnerability Pub Date: August 24, 2016
+In the news: true
+Reference Information
+CVE:  CVE-2016-2183
+
+Description
+The remote host supports the use of SSL ciphers that offer medium strength encryption. Nessus regards medium strength as any encryption that uses key lengths at least 64 bits and less than 112 bits, or else that uses the 3DES encryption suite.
+
+Note that it is considerably easier to circumvent medium strength encryption if the attacker is on the same physical network.
+Solution
+Reconfigure the affected application if possible to avoid use of medium strength ciphers.
+
+See Also
+https://www.openssl.org/blog/blog/2016/08/24/sweet32/
+https://sweet32.info
