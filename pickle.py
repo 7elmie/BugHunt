@@ -4,12 +4,10 @@ See module copyreg for a mechanism for registering custom picklers.
 See module pickletools source for extensive comments.
 
 Classes:
-
     Pickler
     Unpickler
 
 Functions:
-
     dump(object, file)
     dumps(object) -> string
     load(file) -> object
