@@ -79,6 +79,7 @@ class PicklingError(PickleError):
     """
     pass
 
+
 class UnpicklingError(PickleError):
     """This exception is raised when there is a problem unpickling an object,
     such as a security violation.
@@ -105,6 +106,7 @@ except ImportError:
 # Pickle opcodes.  See pickletools.py for extensive docs.  The listing
 # here is in kind-of alphabetical order of 1-character pickle code.
 # pickletools groups them by purpose.
+
 
 MARK           = b'('   # push special markobject on stack
 STOP           = b'.'   # every pickle ends with STOP
@@ -193,6 +195,7 @@ NEXT_BUFFER      = b'\x97'  # push next out-of-band buffer
 READONLY_BUFFER  = b'\x98'  # make top of stack readonly
 
 __all__.extend([x for x in dir() if re.match("[A-Z][A-Z0-9_]+$", x)])
+
 
 
 class _Framer:
